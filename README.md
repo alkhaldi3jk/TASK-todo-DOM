@@ -33,11 +33,11 @@ _Note: You have to be creative and unique with your styling_
 
 ### ⁉️ Questions you need to answer before you get started
 
-- What does the the `select` tag do?
-- What does `option` tag do? Where can it be found?
-- How is `engine.js` reading from `index.js`, `categoryItem.js`, and `taskItem.js`
-- What does components folder contains?
-- What does `engine.js` do?
+- What does the the `select` tag do? "`creates a drop-down list"`
+- What does `option` tag do? Where can it be found? `it adds values to the select tag. it will be inside the select tag.`
+- How is `engine.js` reading from `index.js`, `categoryItem.js`, and `taskItem.js` `use script tage tol link the js files.`
+- What does components folder contains? `A function called categoryitems.js`
+- What does `engine.js` do? 
 - Try all functions inside the `engine.js`
 
 ## PART 1: Add a Task

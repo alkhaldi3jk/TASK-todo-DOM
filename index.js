@@ -26,8 +26,15 @@ function taskChecked(taskId, checked) {
 function addTask() {
   const selectedCategory = getSelectedCategoryById(CATEGORY_SELECTOR);
   const taskTitle = getNewTaskText();
+  const newTask = {
+    id:tasks[tasks.length-1].id+1,
+    title: taskTitle,
+    category:selectedCategory,
+    done:false
+  };
+  tasks.push(newTask);
+  renderTasks(tasks, "tasks-list");
   // continue the code here
-  alert(`Category: ${selectedCategory} | Task: ${taskTitle}`);
 }
 
 function addCategory() {
@@ -43,3 +50,12 @@ function filterTasks() {
   // REMOVE ME: sample alert
   alert(`Category: ${selectedCategory} | done: ${done}`);
 }
+
+
+  // const btn = document.querySelector('#btn');
+  // const sb = document.querySelector('#framework')
+  // btn.onclick = (event) => {
+  //     event.preventDefault();
+  //     // show the selected index
+  //     alert(sb.selectedIndex);
+  // };   to be used to onclick command.

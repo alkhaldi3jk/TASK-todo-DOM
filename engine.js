@@ -27,3 +27,14 @@ function getNewTaskText() {
 function getNewCategoryText() {
   return document.getElementById("new-category").value;
 }
+
+
+      // renderCategories()
+
+      // console.log(renderCategories("movies",0))
+
+  //   renderCategories()
+  // console.log(renderCategories("movies",1))
+
+    // renderTasks()
+    // console.log(renderTasks("any",0))
