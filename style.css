@@ -3,12 +3,25 @@
   padding: 0;
   
 }
+h1{
+  font-family:'Courier New', Courier, monospace ;
+}
+
+p{
+  font-family: 'Courier New', Courier, monospace
+}
 .left-col{
   flex-basis: 50%;
 }
 .right-col{
   flex-basis: 50%;
   position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px;
+  padding: 10px;
 }
 .main{
   width: 100%;
@@ -17,35 +30,34 @@
   overflow: hidden;
 }
 .todo-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+ 
  
 }
 
 .container{
-
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
+  margin: 5px;
   
 }
 
-.container button{
+ button{
   background-color: #4CAF50;
   border: none;
   color: white;
   font-weight: 700;
   font-size: 17px;
-  padding: 16px 32px;
+  padding: 8px 20px;
   text-decoration: none;
-  margin: 4px 2px;
+ 
   cursor: pointer;
   border-radius: 12px;
 }
 
 .container p{
+  
   color: black;
   font-size: 18px;
   margin: 5px;
@@ -74,9 +86,31 @@
   padding: 16px 32px;
   text-decoration: none;
   margin: 4px 2px;
-  cursor: pointer;
+  cursor:auto;
   border-radius: 10px;
-  font-size: 17px;
-  font-weight: 700;
+
 
 }
+
+.category{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+}
+
+
+.category input{
+  width: 200px;
+  height: 12px;
+  background-color: wheat;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
