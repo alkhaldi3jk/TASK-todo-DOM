@@ -39,6 +39,10 @@ function addTask() {
 
 function addCategory() {
   const newCategory = getNewCategoryText();
+    // const categoryTitle = [categories.length-1]+1;
+    // categories.push(categoryTitle);
+    // renderCategories(categories, "categories-list")
+
   // continue the code here
   alert(`New category was added: ${newCategory}`);
 }
