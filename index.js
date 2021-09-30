@@ -18,6 +18,9 @@ renderCategories(categories, CATEGORY_FILTER);
 renderTasks(tasks, "tasks-list");
 
 function taskChecked(taskId, checked) {
+
+ tasks.slice(taskId,checked)
+  
   // implement the delete task.
   // You are given the task id
   console.log(`${checked ? "" : "UN"}CHECKED TASK`, taskId);
@@ -39,9 +42,8 @@ function addTask() {
 
 function addCategory() {
   const newCategory = getNewCategoryText();
-    // const categoryTitle = [categories.length-1]+1;
-    // categories.push(categoryTitle);
-    // renderCategories(categories, "categories-list")
+      categories.push(newCategory);
+      renderCategories(categories, "categories-list")
 
   // continue the code here
   alert(`New category was added: ${newCategory}`);
@@ -50,6 +52,12 @@ function addCategory() {
 function filterTasks() {
   const selectedCategory = getSelectedCategoryById(CATEGORY_FILTER);
   const done = getFilteredDone();
+  
+
+  const newList= tasks.filter(task => task.category === selectedCategory)
+
+  renderTasks(newList,"categories-list-filter")
+  
   // continue the code here
   // REMOVE ME: sample alert
   alert(`Category: ${selectedCategory} | done: ${done}`);

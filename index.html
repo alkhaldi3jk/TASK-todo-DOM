@@ -14,10 +14,10 @@
         <div class="left-col">
             <div class="container">
                 <h1>Reminders</h1>
-                <p>write your todo</p>
+                <p>Write your task</p>
                 <input type="text" name="new-task" id="new-task" placeholder=" Add new task"> 
 
-                <p>Choose the cartegory</p>
+                <p>Choose the Cartegory</p>
                 <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
                 <select id="categories-list" title="All">
                 </select>
@@ -36,22 +36,20 @@
         <!-- FILTERING DIV -->
         <div class="right-col">
         
-        <h1>filter by category</h1>
+        <h1>Filter by Category</h1>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
-        <select id="categories-list-filter" title="All">
-        </select>
-
-        <!-- DONE for filtering thing -->
         <div>
             <input type="checkbox" name="done" id="done">
             <label for="done">Filter by done</label>
         </div>
+        <select onchange="filterTasks()" id="categories-list-filter" title="All">
+        </select>
 
-
+        <!-- DONE for filtering thing -->
 
         <!-- KEEP THE DIV EMPTY. IT WILL BE FILLED BY JS  -->
         <div id="tasks-list" class="todo-item">
-
+            
 
         </div>
     </div>
