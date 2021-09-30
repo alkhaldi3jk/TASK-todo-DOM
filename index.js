@@ -46,7 +46,7 @@ function addCategory() {
       renderCategories(categories, "categories-list")
 
   // continue the code here
-  alert(`New category was added: ${newCategory}`);
+
 }
 
 function filterTasks() {
@@ -60,7 +60,7 @@ function filterTasks() {
   
   // continue the code here
   // REMOVE ME: sample alert
-  alert(`Category: ${selectedCategory} | done: ${done}`);
+
 }
 
 
